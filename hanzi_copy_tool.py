@@ -232,7 +232,7 @@ def setupEditorButton(buttons, editor):
     if editor is None:
         return buttons
 
-    icon_path = None
+    icon_path = os.path.join(os.path.dirname(__file__), "copy.svg")
 
     # editor._links['hanziCopy'] = editorBtnClicked
     btn = editor.addButton(icon_path, 
